@@ -59,12 +59,17 @@ A working classifier evaluated with precision/recall/F1 and a confusion matrix, 
 
 ### Project Milestones
 Use these milestones to guide your work. Your team will create a GitHub Projects board to track tasks within each milestone.
+
 | Month | Milestone | Key Activities |
-|-------|-----------|----------------|
-| **September** | Data Exploration & Preprocessing | Defining the threat model, consolidating disparate datasets, performing exploratory data analysis, and standardizing labeling schemas. |
-| **October** | Feature Engineering & Baseline Modeling | Implementing feature extraction via TF-IDF and embeddings, developing baseline classical classifiers, and establishing initial performance benchmarks. |
-| **November** | Model Optimization & Evaluation | Building a feedforward neural network in Keras, iterating on model selection, and conducting rigorous error and bias analysis. |
-| **December** | Insights, Deliverables & Presentation | Finalizing model evaluation, documenting technical findings, cleaning the repository, and preparing the final business presentation. |
+| :--- | :--- | :--- |
+| September | Data Processing, EDA & Baseline Classification | • Ingest and inspect prompt injection datasets (PromptGame benchmark dataset).<br>• Clean text prompts and categorize attack vectors (direct injection, indirect injection, roleplay jailbreaks).<br>• Perform Exploratory Data Analysis (EDA) on prompt token distributions and attack patterns.<br>• Implement baseline classical NLP classifiers (TF-IDF + Logistic Regression / Naive Bayes) and establish evaluation metrics (Precision, Recall, F1-Score, False Positive Rate). |
+| October | Deep Learning Modeling & Transformer Fine-Tuning | • Fine-tune pre-trained transformer models (e.g., DistilBERT, RoBERTa) for malicious prompt detection.<br>• Engineer specialized features for adversarial techniques (obfuscation, character swapping, roleplay framing, system prompt overrides).<br>• Perform hyperparameter tuning and threshold optimization to minimize false positives on benign user inputs. |
+| November / December | Model Explainability, Guardrail UI & Capstone Deliverables | • Apply interpretability methods (SHAP / attention weights) to highlight specific trigger phrases causing adversarial classification.<br>• Develop an interactive Streamlit application or API wrapper to scan input prompts in real time and display threat risk scores.<br>• Package a clean, reproducible GitHub repository, comprehensive project documentation, and stakeholder presentation deck. |
+
+### Stretch Goals
+* **Real-Time Guardrail Middleware:** Integrate the prompt classifier as an automated interceptor layer that inspects and blocks malicious prompts before sending queries to downstream LLM APIs.
+* **Adversarial Obfuscation Robustness:** Stress-test and fine-tune the classifier against advanced evasion techniques (e.g., Base64 encoding, ROT13, multilingual jailbreaks, and zero-width character insertion).
+* **Synthetic Attack Generator:** Build a lightweight red-teaming tool that automatically generates synthetic prompt injection variants to continuously evaluate classifier boundaries.
 
 > **Note for the team:** Please create a GitHub Projects board in this repository to break these milestones into weekly tasks. Go to the **Projects** tab → **New project** → Choose **Board** → Add columns for each month.
 
