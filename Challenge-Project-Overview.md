@@ -85,7 +85,7 @@ Use these milestones to guide your work. Your team will create a GitHub Projects
 ---
 
 ## 📊 Dataset
-**Name and Source:** Publicly sourced prompt-injection and jailbreak adversarial text repositories.  
+**Name and Source:** PromptGame Dataset: Prompt Injection Attack Benchmark and Defense Evaluation Data   
 **Format:** CSV, TSV, and JSON.  
 **Size:** Under 1GB.  
 **Location:** https://ieee-dataport.org/documents/promptgame-dataset-prompt-injection-attack-benchmark-and-defense-evaluation-data  
