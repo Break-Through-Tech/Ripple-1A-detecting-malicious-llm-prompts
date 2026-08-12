@@ -41,7 +41,7 @@ This project offers a compelling, security-focused NLP application that perfectl
 
 **Company / Org:** Ripple  
 **Challenge Advisor:** Naga Sujitha Vummaneni, nv262@cornell.edu  
-**AI Studio Coach:** Om Kamath, om.kamath@breakthroughtech.org 
+**AI Studio Coach:** Om Kamath, om.kamath@breakthroughtech.org   
 **Program:** Break Through Tech AI Studio - Fall 2026  
 
 ---
